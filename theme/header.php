@@ -15,6 +15,9 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
 	<?php wp_head(); ?>
 </head>
 
@@ -22,7 +25,7 @@
 
 <?php wp_body_open(); ?>
 
-<div id="page">
+<div id="page" class="max-w-4xl mx-auto">
 	<a href="#content" class="sr-only"><?php esc_html_e( 'Skip to content', 'spacelle' ); ?></a>
 
 	<?php get_template_part( 'template-parts/layout/header', 'content' ); ?>

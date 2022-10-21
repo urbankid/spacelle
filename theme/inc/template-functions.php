@@ -104,3 +104,17 @@ add_filter( 'excerpt_more', 'sp__continue_reading_link' );
 
 // Filter the content more link.
 add_filter( 'the_content_more_link', 'sp__continue_reading_link' );
+
+// Setup custom header
+function sp__custom_header_setup() {
+    $args = array(
+        'default-image'      => get_template_directory_uri() . '/assets/banner-spacelle-2010.jpg',
+        'default-text-color' => '000',
+        'width'              => 900,
+        'height'             => 222,
+        'flex-width'         => true,
+        'flex-height'        => true,
+    );
+    add_theme_support( 'custom-header', $args );
+}
+add_action( 'after_setup_theme', 'sp__custom_header_setup' );

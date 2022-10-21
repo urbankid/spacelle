@@ -70,7 +70,7 @@ if ( ! function_exists( 'sp__entry_meta' ) ) :
 		if ( 'post' === get_post_type() ) {
 
 			// Posted by.
-			sp__posted_by();
+			// sp__posted_by();
 
 			// Posted on.
 			sp__posted_on();

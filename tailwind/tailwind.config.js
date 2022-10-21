@@ -1,5 +1,6 @@
 // Set flag to include Preflight conditionally based on the build target.
 const includePreflight = ( 'editor' === process.env._TW_TARGET ) ? false : true;
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
 	presets: [
@@ -14,7 +15,9 @@ module.exports = {
 	theme: {
 		// Extend the default Tailwind theme.
 		extend: {
-
+			fontFamily: {
+				sans: ["Work Sans", ...defaultTheme.fontFamily.sans],
+			},
 		},
 	},
 	corePlugins: {
